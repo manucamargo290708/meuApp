@@ -8,6 +8,9 @@ import HorariosAulasScreen from '../screens/HorariosAulasScreen';
 import ProximasCompeticoesScreen from '../screens/ProximasCompeticoesScreen';
 import PremiacoesScreen from '../screens/PremiacoesScreen';
 import CursosExtrasScreen from '../screens/CursosExtrasScreen';
+import HomeScreen from '../screens/HomeScreen';
+import EditarPerfilScreen from '../screens/EditarPerfilScreen';
+import CarrinhoScreen from '../screens/CarrinhoScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -34,10 +37,11 @@ export default function DrawerNavigator() {
         },
       }}
     >
+      
       <Drawer.Screen
         name="Home"
         component={TabNavigator}
-      />
+      />       
 
       <Drawer.Screen
         name="Ensaios Extras"
