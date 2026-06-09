@@ -12,28 +12,19 @@ export default function CarrinhoScreen() {
       <View style={styles.card}>
         
         <Text style={styles.nome}>
-          Curso: Contemporâneo
+          Curso: Hip Hop
         </Text>
 
         <Text style={styles.item}>
-          Segunda, quarta e sexta-feira
+          Segunda e quarta-feira
         </Text>
 
         <Text style={styles.valor}>
-          Valor: R$40,00
+          Valor: R$ 75,00/aula
         </Text>
       </View>
 
         <View style={styles.botoesContainer}>
-          <TouchableOpacity
-            style={styles.botaoSalvar}
-            onPress={() => Alert.alert('Sucesso', 'Alterações salvas!')}
-        >
-            <Text style={styles.textoBotao}>
-                Finalizar compra
-            </Text>
-        </TouchableOpacity>
-
         <TouchableOpacity
             style={styles.botaoSalvar}
             onPress={() => Alert.alert('Sucesso', 'Alterações salvas!')}
@@ -43,6 +34,14 @@ export default function CarrinhoScreen() {
             </Text>
         </TouchableOpacity>
 
+        <TouchableOpacity
+            style={styles.botaoSalvar}
+            onPress={() => Alert.alert('Sucesso', 'Alterações salvas!')}
+        >
+            <Text style={styles.textoBotao}>
+                Finalizar compra
+            </Text>
+        </TouchableOpacity>
         </View>
 
     </LinearGradient>

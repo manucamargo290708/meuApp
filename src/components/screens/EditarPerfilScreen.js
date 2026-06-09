@@ -11,6 +11,16 @@ export default function EditarPerfilScreen() {
           Editar Perfil
         </Text>
 
+        <View style={styles.fotoBox}>
+          <Image
+            source={require('../../../assets/FotoManuAtual.jpg')}
+            style={styles.foto}
+          />
+          <TouchableOpacity style={styles.botaoFoto} onPress={() => Alert.alert('Foto', 'Função de editar foto em breve!')}>
+            <Text style={styles.textoBotaoFoto}>Editar foto de perfil</Text>
+          </TouchableOpacity>
+        </View>
+
         <View style={styles.card}>
 
           <Text style={styles.label}>Nome</Text>
@@ -73,7 +83,32 @@ const styles = StyleSheet.create({
     color:'#d8b4ff',
     fontSize:28,
     textAlign:'center',
-    marginBottom:20
+    marginBottom:17
+  },
+  fotoBox:{
+    alignItems:'center',
+    marginBottom:17,
+  },
+  foto:{
+    width:140,
+    height:140,
+    borderRadius:85,
+    borderWidth:2,
+    borderColor:'#d8b4ff',
+  },
+  botaoFoto:{
+    marginTop:10,
+    backgroundColor:'rgba(216,180,255,0.18)',
+    paddingHorizontal:12,
+    paddingVertical:8,
+    borderRadius:10,
+    borderWidth:1,
+    borderColor:'#d8b4ff',
+  },
+  textoBotaoFoto:{
+    color:'#fff',
+    fontSize:13,
+    fontWeight:'600',
   },
   card:{
     backgroundColor:'rgba(255,255,255,0.15)',

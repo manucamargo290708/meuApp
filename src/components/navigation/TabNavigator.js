@@ -3,11 +3,12 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import HomeScreen from '../screens/HomeScreen';
 import CarrinhoScreen from '../screens/CarrinhoScreen';
 import EditarPerfilScreen from '../screens/EditarPerfilScreen';
+import ProcurarScreen from '../screens/ProcurarScreen';
 
 const Tab = createBottomTabNavigator();
 
 export default function TabNavigator() {
-  return (
+  return ( 
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
@@ -35,7 +36,7 @@ export default function TabNavigator() {
 
       <Tab.Screen
         name="Procurar"
-        component={CarrinhoScreen}
+        component={ProcurarScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Ionicons
@@ -47,6 +48,20 @@ export default function TabNavigator() {
         }}
       />
 
+<Tab.Screen
+        name="Carrinho"
+        component={CarrinhoScreen}
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons
+              name="cart-outline"
+              size={size}
+              color={color}
+            />
+          ),
+        }}
+      />
+      
       <Tab.Screen
         name="Perfil"
         component={EditarPerfilScreen}
