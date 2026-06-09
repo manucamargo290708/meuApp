@@ -42,7 +42,6 @@ export default function EditarPerfilScreen() {
             style={styles.input}
             placeholder="********"
             placeholderTextColor="#412f51"
-            secureTextEntry
           />
 
           <Text style={styles.label}>Telefone</Text>
